@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Base {
@@ -15,7 +16,9 @@ public static RemoteWebDriver driver;
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--remote-allow-origins=*");
+		
 		driver = new ChromeDriver(chromeOptions);
+		
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));

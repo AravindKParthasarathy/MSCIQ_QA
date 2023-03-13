@@ -13,6 +13,7 @@ import projectSpecification.ProjectSpecification;
 public class BusinessStructurePage extends ProjectSpecification{
 	By addBtn = By.xpath("//button[text()='+ Add']");
 	By GOC = By.xpath("//span[text()='Group of Company']");
+    
 	By successMsg = By.xpath("//div[text()='Group company added successfully.']");
 	By tableHead = By.xpath("//tr[contains(@class, 'MuiTableRow-root')]/child::th/child::div[contains(text(),'Group')]");
 	By tableBody = By.xpath("(//tbody[contains(@class, 'MuiTableBody-root')])[1]//td[5]/preceding-sibling::td");
